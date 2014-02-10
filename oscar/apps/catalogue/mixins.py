@@ -1,3 +1,20 @@
+"""
+Django haystack does not use generic Class-based views, there is a pull request
+https://github.com/toastdriven/django-haystack/pull/826
+that adds this capability.
+There is a thread on the developers thread that indicates that this pull
+request will get accepted give or take some tweaks and tests:
+https://groups.google.com/forum/#!topic/django-haystack-dev/Mi07E7TEnuU
+
+Either way, having a mixin that converts that haystack views to generic views
+that Oscar uses will make things a lot easier. Oscar can continue to provide
+flexibility that is familiar and in line with the rest of the views.
+Credit goes to https://github.com/lehins for his code.
+
+Note: Code is left as is, but will need some PEP8 cleanup if we are to include
+it more permanently into Oscar, at least until haystack plays nice
+with generic CBV's.
+"""
 import warnings
 from django.conf import settings
 from django.core.paginator import Paginator, InvalidPage
