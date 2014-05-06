@@ -21,7 +21,7 @@ ul {
     height:370px;
     overflow:hidden;
     text-align:center;
-    margin: @baseLineHeight 0;
+    margin: @line-height-base 0;
     position:relative;
     p, h3, h2, form {
         margin-bottom:0;
@@ -41,7 +41,7 @@ ul {
     .image_container,
     .availability,
     .price_color {
-        margin-bottom: @baseLineHeight / 2;
+        margin-bottom: @line-height-base / 2;
     }
     // This could be set to 100% but this gives a little more space around products.
     .product_price {
@@ -71,6 +71,6 @@ ul {
 
 // Add a hover state for thumbnail
 a:hover .thumbnail {
-    border-color: @linkColor;
+    border-color: @link-color;
     .box-shadow(0 1px 4px rgba(0,105,214,.25));
 }
