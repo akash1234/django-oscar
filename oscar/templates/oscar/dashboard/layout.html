@@ -8,13 +8,12 @@
 
 {% block mainstyles %}
     {% compress css %}
-        <link rel="stylesheet" href="{% static "oscar/css/bootstrap.min.css" %}" />
+        <link rel="stylesheet" href="{% static "oscar/css/bootstrap2.min.css" %}" />
+        <link rel="stylesheet" href="{% static "oscar/css/bootstrap2-responsive.min.css" %}" />
         {% if use_less %}
             <link rel="stylesheet" type="text/less" href="{% static "oscar/less/dashboard.less" %}" />
-            <link rel="stylesheet" type="text/less" href="{% static "oscar/less/responsive.less" %}" />
         {% else %}
             <link rel="stylesheet" type="text/css" href="{% static "oscar/css/dashboard.css" %}" />
-            <link rel="stylesheet" type="text/css" href="{% static "oscar/css/responsive.css" %}" />
         {% endif %}
     {% endcompress %}
 {% endblock %}

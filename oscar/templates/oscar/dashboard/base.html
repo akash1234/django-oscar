@@ -1,1 +1,12 @@
 {% extends "base.html" %}
+{% load compress %}
+{% load staticfiles %}
+
+{% block scripts %}
+    {% compress js %}
+    <!-- Twitter Bootstrap -->
+    <script type="text/javascript" src="{% static "oscar/js/bootstrap/bootstrap2.min.js" %}"></script>
+    <!-- Oscar -->
+    <script src="{% static "oscar/js/oscar/ui.js" %}" type="text/javascript" charset="utf-8"></script>
+    {% endcompress %}
+{% endblock %}
