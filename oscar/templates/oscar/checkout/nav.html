@@ -1,7 +1,7 @@
 {% load i18n %}
 
 <div class="navbar navbar-static-top navbar-inverse nav-checkout">
-    <div class="navbar-inner">
+    <div class="container-fluid">
         <ul class="nav row">
             {% spaceless %}
                 <li class="step1 {% if step == 1 %}active{% else %}{% if step == 2 %}previous{% else %}{% if step > 1 %}visited{% else %}disabled{% endif %}{% endif %}{% endif %} col-md-3">
@@ -56,5 +56,5 @@
                 </li>
             {% endspaceless %}
         </ul>
-    </div><!-- /navbar-inner -->
+    </div><!-- /container-fluid -->
 </div><!-- /navbar -->
