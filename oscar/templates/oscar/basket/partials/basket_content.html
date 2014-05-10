@@ -60,7 +60,7 @@
                             <div class="col-md-3">
                                 <div class="checkout-quantity control-group {% if form.errors %}error{% endif %}">
                                     {{ form.quantity }}
-                                    <button class="btn" type="submit">{% trans "Update" %}</button>
+                                    <button class="btn btn-default" type="submit">{% trans "Update" %}</button>
                                     <p>
                                         <a href="#" data-id="{{ forloop.counter0 }}" data-behaviours="remove" class="inline">{% trans "Remove" %}</a>
                                         {% if request.user.is_authenticated %}
@@ -110,7 +110,7 @@
                 <div class="sub-header">
                     <h2>{% trans "Voucher/promo code" %}</h2>
                 </div>
-                <p id="voucher_form_link"><a href="#voucher" class="btn btn-full">{% trans "I have a voucher code..." %}</a></p>
+                <p id="voucher_form_link"><a href="#voucher" class="btn btn-default btn-full">{% trans "I have a voucher code..." %}</a></p>
 
                 <div id="voucher_form_container" style="display:none">
                     <h4>{% trans "Voucher code" %}</h4>
@@ -202,7 +202,7 @@
                                 </p>
                             </div>
                             <div class="col-md-2">
-                                <a href="#" data-id="{{ forloop.counter0 }}" class="btn pull-right btn-block" data-behaviours="move">{% trans "Move to basket" %}</a>
+                                <a href="#" data-id="{{ forloop.counter0 }}" class="btn btn-default pull-right btn-block" data-behaviours="move">{% trans "Move to basket" %}</a>
                             </div>
                         </div>
                     </div>

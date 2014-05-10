@@ -53,7 +53,7 @@
 
                         {% block shipping_address_actions %}
                             <div class="alert-actions">
-                                <a href="{% url 'checkout:shipping-address' %}" class="btn">{% trans "Change shipping address" %}</a>
+                                <a href="{% url 'checkout:shipping-address' %}" class="btn btn-default">{% trans "Change shipping address" %}</a>
                             </div>
                         {% endblock %}
                     </div>
@@ -70,7 +70,7 @@
 
                         {% block shipping_method_actions %}
                             <div class="alert-actions">
-                                <a href="{% url 'checkout:shipping-method' %}" class="btn">{% trans "Change shipping method" %}</a>
+                                <a href="{% url 'checkout:shipping-method' %}" class="btn btn-default">{% trans "Change shipping method" %}</a>
                             </div>
                         {% endblock %}
                     </div>
@@ -88,7 +88,7 @@
                     <h4>{% trans "Payment" %}</h4>
                     <p>{% trans "Payment details to go here" %}</p>
                     <div class="alert-actions">
-                        <a href="{% url 'checkout:payment-details' %}" class="btn">{% trans "Change payment details" %}</a>
+                        <a href="{% url 'checkout:payment-details' %}" class="btn btn-default">{% trans "Change payment details" %}</a>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
 
         {% block order_contents_actions %}
             <div class="form-actions">
-                <a href="{% url 'basket:summary' %}" class="btn">{% trans "Edit order contents" %}</a>
+                <a href="{% url 'basket:summary' %}" class="btn btn-default">{% trans "Edit order contents" %}</a>
             </div>
         {% endblock %}
 
