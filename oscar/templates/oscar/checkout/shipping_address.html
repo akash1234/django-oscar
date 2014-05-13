@@ -43,7 +43,7 @@
                                             <button type="submit" class="btn btn-primary ship-address">{% trans "Ship to this address" %}</button>
                                         {% endif %}
                                         <a href="{% url 'checkout:user-address-update' pk=address.id %}">{% trans "Edit address" %}</a>
-                                        <a href="{% url 'checkout:user-address-delete' pk=address.id %}" class="btn btn-default btn-small btn-remove-address">{% trans "Delete" %}</a>
+                                        <a href="{% url 'checkout:user-address-delete' pk=address.id %}" class="btn btn-default btn-sm btn-remove-address">{% trans "Delete" %}</a>
                                     </form>
                                 </div>
                             </li>
@@ -66,7 +66,7 @@
             <div class="well">
                 {% csrf_token %}
                 {% include "partials/form_fields.html" with form=form %}
-                <button type="submit" class="btn btn-large btn-primary">{% trans "Continue" %}</button>
+                <button type="submit" class="btn btn-lg btn-primary">{% trans "Continue" %}</button>
                 {% trans "or" %} <a href="{% url 'basket:summary' %}">{% trans "return to basket" %}</a>
             </div>
         </form>
