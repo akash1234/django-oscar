@@ -21,13 +21,11 @@
 <ul class="breadcrumb">
     <li>
         <a href="{{ homepage_url }}">{% trans "Home" %}</a>
-        <span class="divider">/</span>
     </li>
     {% with category=product.categories.all.0 %}
         {% for c in category.get_ancestors %}
         <li>
             <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
-            <span class="divider">/</span>
         </li>
         {% endfor %}
         <li class="active">{{ product.title }}</li>

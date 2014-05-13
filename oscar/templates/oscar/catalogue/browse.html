@@ -19,7 +19,6 @@
     <ul class="breadcrumb">
         <li>
             <a href="{{ homepage_url }}">{% trans "Home" %}</a>
-            <span class="divider">/</span>
         </li>
         {% if not category %}
             <li class="active">{% trans "All products" %}</li>
@@ -27,7 +26,6 @@
             {% for category in category.get_ancestors|slice:":-1" %}
                 <li>
                     <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
-                    <span class="divider">/</span>
                 </li>
             {% endfor %}
             <li class="active">{{ category.name }}</li>
