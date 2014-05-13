@@ -23,7 +23,7 @@
 
 {% if not basket.is_empty %}
     {% block basket_form_headers %}
-        <div class="basket-title hidden-phone">
+        <div class="basket-title hidden-xs">
             <div class="row">
                 <h4 class="col-md-6">{% trans "Items to buy now" %}</h4>
                 <h4 class="col-md-3">{% trans "Quantity" %}</h4>
@@ -160,7 +160,7 @@
             <div class="sub-header">
                 <h3>{% trans "To buy later" %}</h3>
             </div>
-            <div class="row basket-title hidden-phone">
+            <div class="row basket-title hidden-xs">
                 <h4 class="col-md-8">{% trans "Items" %}</h4>
                 <h4 class="col-md-2 align-center">{% trans "Price" %}</h4>
                 <div class="col-md-2">&nbsp;</div>
