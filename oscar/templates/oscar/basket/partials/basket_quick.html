@@ -5,7 +5,7 @@
 {% load i18n %}
 {% load staticfiles %}
 
-<ul class="basket-mini-item unstyled">
+<ul class="basket-mini-item list-unstyled">
     {% if request.basket.num_lines %}
         {% for line in request.basket.all_lines %}
             <li>
